@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include android:id="@+id/miActionBar"
+        layout="@layout/toolbar"
+        ></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ibtChajari"
+                android:layout_height="190dp"
+                android:layout_width="wrap_content"
+                android:background="@drawable/chaja"
+                android:onClick="IrAMapsChajari"
+                />
+
+            <ImageButton
+                android:id="@+id/ibtParana"
+                android:layout_height="190dp"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/parana"
+                android:onClick="IrAMapsParana"
+                />
+            <ImageButton
+                android:id="@+id/ibtConcordia"
+                android:layout_height="190dp"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/concordia"
+                android:onClick="IrAMapsConcordia"
+                />
+            <ImageButton
+                android:id="@+id/ibtFederacion"
+                android:layout_height="190dp"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/federacion"
+                android:onClick="IrAMapsFederacion"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
